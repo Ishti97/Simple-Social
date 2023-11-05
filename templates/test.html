@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+
+    <div style="display: flex; justify-content: center; position: relative; ">
+    
+    
+        <div style=" padding-left: 10px;  border: 2px solid gray; border-radius: 15px 50px; width: 250px; ">
+            <h2 style="padding-left: 25px;"><b>Welcome, <br>{{ user.username }}</b> </h2>
+             
+        </div>
+    
+    
+    
+    </div>
+    <br>
+    <br>
+
+    <div style="display: flex; justify-content: center; position: relative; ">
+    
+   
+     <h4>
+        <i> 
+            <b> 
+                # Enable group & post creation.
+                <br><br>
+                # Users can join and share posts only within their affiliated groups.
+                <br><br>
+                # Introduce your friend to SimpleSocial.
+            </b>
+        </i> 
+    </h4>
+       
+    
+
+    
+    
+    </div>
+        
+   
+       
+       
+
+    
+   
+    {% endif %}
+{% endblock %}
